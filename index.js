@@ -3,15 +3,15 @@
 const job = 'developper'
 function rappelName (leny, age){
     if((typeof leny === 'string') && (typeof age === 'number')){
-        return `hi ${leny} !! you have ${age} years old and you're ${job}`
+        return `hello ${leny} !! you have ${age} years old and you're ${job}`
     }else if((typeof leny === 'string') || (typeof age != 'number')) {
-        return "you must give your correct name"
+        return "you must give your correct name or age"
     }else {
         return 'syntax error'
     }
      
 }
-const nom = 'peter';
+const nom = 'grace';
 // console.log(nom);
-const mbula = 27
+const mbula = 25
 console.log(rappelName(nom, mbula));
