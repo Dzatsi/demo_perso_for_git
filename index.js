@@ -4,9 +4,10 @@ const job = 'developper'
 function rappelName (leny, age){
     if((typeof leny === 'string') && (typeof age === 'number')){
         return `hi ${leny} !! you have ${age} years old and you're ${job}`
+    }else if((typeof leny === 'string') || (typeof age != 'number')) {
+        return "you must give your correct name"
     }else {
-    
-        return "syntax error"
+        return 'syntax error'
     }
      
 }
